@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <!-- nike logo -->
+    <link rel="icon" href="../assets/images/logo-for-web.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nike clone</title>
+</head>
+
+<body class="box-border m-0 p-0 font-[roboto]">
+    <!-- Blur Background -->
+    <div class="backdrop-blur-md w-full hidden h-screen fixed z-10" id="background-blur"></div>
+    <!-- Header -->
+    <header class="relative z-[100]">
+        <!-- start hamburger bar -->
+        <hamburger-section></hamburger-section>
+        <!-- end hamburger bar -->
+        <!--start Top header -->
+        <top-navbar></top-navbar>
+        <!--end Top header -->
+        <!-- start Main navbar -->
+        <main-navbar></main-navbar>
+        <!-- end Main navbar -->
+    </header>
+    <!-- end Main navbar -->
+    <!--start Cover  -->
+    <figure>
+        <div class="w-full m-0 p-0 ">
+            <div class="">
+                <img class=" w-full hidden md:block " src="../assets/images/purple.png" alt="Cover images for desktop">
+                <img class="object-fit w-full block md:hidden " src="../assets/images/covertopRes.png"
+                    alt="Cover images for Phone">
+            </div>
+            <figcaption class="flex w-full justify-center my-12">
+                <div class="w-9/12 text-center cursor-pointer">
+                    <p class="m-1">Nike Indy Bra</p>
+                    <h3 class="font-extrabold uppercase text-5xl font-roboto m-2">Feel Sculpted</h3>
+                    <p class="m-6 ">Light, medium, or high support for every move & everybody</p>
+                    <div class="mt-6 ">
+                        <a class="py-3 px-6 bg-black text-white rounded-full hover:opacity-50" href="">Shop</a>
+                    </div>
+                </div>
+            </figcaption>
+        </div>
+    </figure>
+    <!-- end cover -->
+    <!-- start main content -->
+    <main>
+        <!-- start grid image -->
+        <grid-card data-source="home-card"></grid-card>
+        <!-- end grid image -->
+        <!--start Mid Caption -->
+        <div class="w-full flex justify-center mt-[84px]">
+            <div class="w-[70%] text-center ">
+                <div>
+                    <h3 class="text-5xl font-extrabold font-roboto"><a href="">New This week</a></h3>
+                </div>
+                <div class="mt-6 flex justify-center gap-4">
+                    <a class="bg-black text-white rounded-full py-2 px-3 hover:opacity-60" href="">Shop Men's New
+                        Arrivals</a>
+                    <a class="bg-black text-white rounded-full py-2 px-3 hover:opacity-60" href="">Shop Women's New
+                        Arrivals</a>
+                </div>
+            </div>
+        </div>
+        <!-- end-mid Caption -->
+        <!-- start botCover -->
+        <div class="mt-12">
+            <img class="w-full hidden md:block" src="../assets/images/botCover.png" alt="Bottom cover">
+        </div>
+        <div class="mt-12">
+            <img class="w-full md:hidden block" src="../assets/images/botCoverRes.png"
+                alt="Bottom cover for responsive">
+        </div>
+
+        <!-- end botCover -->
+
+        <!-- start shoes slide -->
+        <div class="max-w-[1800px] mx-auto relative">
+            <div class="max-w-[1800px] mx-auto mb-6 px-12 mt-[84px]">
+                <h3 class="uppercase text-4xl font-extrabold">Shop By Classics</h3>
+            </div>
+            <div>
+                <!-- next icon  -->
+                <button onclick="slideShoes(0, 1)"
+                    class=" bg-white w-10 h-10 absolute rounded-[50%] right-[84px] top-[45%] z-10 hover:opacity-60">
+                    <svg class="relative left-[10px]" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                        role="img" width="20px" height="20px" fill="none">
+                        <path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path>
+                    </svg>
+                </button>
+                <!--previous icon  -->
+                <button onclick="slideShoes(0, -1)"
+                    class="bg-white w-10 h-10 absolute rounded-full left-[84px] top-[45%] z-10 hover:opacity-60">
+                    <svg class="relative left-[10px]" aria-hidden="true" focusable="false" viewBox="0 0 24 24"
+                        role="img" width="20px" height="20px" fill="none">
+                        <path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path>
+                    </svg>
+                </button>
+                <!-- carousel component -->
+                <carousel-image data-source="carousel-home"></carousel-image>
+                <!-- end shoes slide -->
+            </div>
+        </div>
+        <!-- end shoes slide -->
+        <!--caption-->
+        <div class="max-w-[1800px] mx-auto  mt-[84px]">
+            <div class="mb-6 px-12">
+                <h3 class="uppercase text-4xl font-extrabold">Nike Membership</h3>
+                <abs-card-container data-source="home-page-cards" display-style="flex"></abs-card-container>
+            </div>
+            <!-- start card -->
+            <!-- end card -->
+        </div>
+        <!-- start merchMenuWrapper -->
+        <div class="mt-[84px] max-w-[920px] mx-auto mb-[84px]">
+            <merch-menu-wrapper data-source="merch-menu"></merch-menu-wrapper>
+        </div>
+
+        <!-- end merchMenuWrapper -->
+    </main>
+    <!-- start footer -->
+    <footer-nike data-source="footer-menu"></footer-nike>
+    <!--end footer  -->
+    <!-- js for components -->
+    <script src="../assets/js/components/component.js"></script>
+    <script src="../assets/js/components/grid-card.js" type="module"></script>
+    <script src="../assets/js/components/carosel-component.js" type="module"></script>
+    <script src="../assets/js/components/absolute-cap-card.js" type="module"></script>
+    <script src="../assets/js/components/merch-menu.js" type="module"></script>
+    <script src="../assets/js/components/footer.js" type="module"></script>
+    <!-- js for function -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/new-feature.js"></script>
+</body>
+
+</html>

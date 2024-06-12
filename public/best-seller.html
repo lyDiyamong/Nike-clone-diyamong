@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- nike logo -->
+    <link rel="icon" href="../assets/images/logo-for-web.png">
+    <title>Best Sellers. Nike.com</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border font-[roboto]">
+    <!-- blur background -->
+    <div class="backdrop-blur-md w-full hidden h-screen fixed z-40" id="background-blur"></div>
+    <!-- Header -->
+    <header class="relative z-[100]">
+        <!-- start hamburger bar -->
+        <hamburger-section></hamburger-section>
+        <!-- end hamburger bar -->
+        <!--start Top header -->
+        <top-navbar></top-navbar>
+        <!--end Top header -->
+        <!-- start Main navbar -->
+        <main-navbar></main-navbar>
+        <!-- end Main navbar -->
+    </header>
+    <!-- start banner auto-slide -->
+    <section class="bg-[#f7f7f7] h-[60px] mb-4">
+        <div class="max-w-[768px] mx-auto min-h-[60px] relative">
+            <!-- next icon  -->
+            <!--previous icon  -->
+            <ul class="pt-6 min-h-[60px] text-[12px] underline">
+                <li class="max-w-[297px] mx-auto "><a href="">Members: Free Shipping on Orders $50+</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end banner auto slide -->
+    <!-- start Main content -->
+    <main>
+        <!-- top main -->
+        <div class="max-w-full lg:max-w-[1920px] mx-auto sticky top-0 left-0 bg-white z-10">
+            <div class="flex justify-between px-4 lg:px-12 pb-[30px] items-center">
+                <h1 class="text-[24px] font-semibold ">Best Seller</h1>
+                <nav class="lg:flex gap-6 hidden ">
+                    <button class="flex gap-1">
+                        <span>Hide Filter</span>
+                        <svg aria-hidden="true" class="icon-filter-ds" focusable="false" viewBox="0 0 24 24" role="img"
+                            width="24px" height="24px" fill="none">
+                            <path stroke="currentColor" stroke-width="1.5" d="M21 8.25H10m-5.25 0H3"></path>
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path>
+                            <path stroke="currentColor" stroke-width="1.5" d="M3 15.75h10.75m5 0H21"></path>
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div>
+                        <button id="#accordions-btn" class=" flex gap-1">
+                            <span>Sort By</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="#accordions-dropdown"
+                            class=" w-[150px] top-[85px] lg:top-[55px] right-[30px] absolute max-h-[0px] bg-white z-[1000] text-start  overflow-hidden duration-500 rounded-2xl">
+                            <ul class="py-4 px-2 text-end">
+                                <li class="hover:opacity-60 ">Featured</li>
+                                <li class="hover:opacity-60 ">Newest</li>
+                                <li class="hover:opacity-60 ">Price:High-Low</li>
+                                <li class="hover:opacity-60 ">Price:Low-High</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--start main content -->
+        <div class="max-w-full lg:max-w-[1920px] relative mx-auto flex flex-col lg:flex-row box-border ">
+            <!-- start sidebar -->
+            <sidebar-section></sidebar-section>
+            <!-- end sidebar -->
+            <!-- start grid shoes card -->
+            <div class="max-w-full lg:w-[1640px] bg-white lg:pr-12 lg:pl-10 ">
+                <card-component data-source="card-2-data"></card-component>
+            </div>
+        </div>
+        <!--start main content -->
+    </main>
+    <!-- end main content -->
+    <!-- start footer -->
+    <footer-nike data-source="footer-menu"></footer-nike>
+    <!--end footer  -->
+    <!-- js for component -->
+    <script src="../assets/js/components/component.js"></script>
+    <script src="../assets/js/components/card-component.js" type="module"></script>
+    <script src="../assets/js/components/footer.js" type="module"></script>
+    <!-- js for function -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/new-feature.js"></script>
+
+</body>
+
+</html>

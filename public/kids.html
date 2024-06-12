@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- nike logo -->
+    <link rel="icon" href="../assets/images/logo-for-web.png">
+    <title>Kids</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="box-border m-0 p-0 font-[roboto]">
+    <!-- blur background -->
+    <div class="backdrop-blur-md w-full hidden h-screen fixed z-40" id="background-blur"></div>
+    <!-- Header -->
+    <header class="relative z-[100]">
+        <!-- start hamburger bar -->
+        <hamburger-section></hamburger-section>
+        <!-- end hamburger bar -->
+        <!--start Top header -->
+        <top-navbar></top-navbar>
+        <!--end Top header -->
+        <!-- start Main navbar -->
+        <main-navbar></main-navbar>
+        <!-- end Main navbar -->
+    </header>
+    <!-- end Main navbar -->
+    <!-- start banner auto-slide -->
+    <section class="bg-[#f7f7f7] h-[60px] mb-4">
+        <div class="max-w-[768px] mx-auto min-h-[60px] relative">
+            <!-- next icon  -->
+            <!--previous icon  -->
+            <ul class="pt-6 min-h-[60px] text-[12px] underline">
+                <li class="max-w-[297px] mx-auto "><a href="">Members: Free Shipping on Orders $50+</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end banner auto slide -->
+    <!-- Sticky menu bar -->
+    <div class="w-full sticky top-0 left-0 z-20 bg-white">
+        <div class="max-w-[1824px] mx-auto px-12 sticky top-0 left-0  ">
+            <menu class=" pt-[26px] pb-[34px] flex flex-col lg:flex-row lg:justify-between lg:items-center relative">
+                <h4 class="text-2xl">
+                    Kids
+                </h4>
+                <ul class="flex gap-5 overflow-x-auto whitespace-nowrap no-scrollbar cursor-pointer ">
+                    <li>
+                        <div class="dropdown-hover">
+                            <span class=" hover:opacity-60">Shoes</span>
+                            <div
+                                class="dropdown-menu w-[250px] top-[85px] lg:top-[55px] absolute max-h-[0px] bg-white z-[1000] text-start  overflow-hidden duration-500">
+                                <ul class="py-4 px-2">
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Big Kids(3.5C - 7Y)</li>
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Little Kids(10.5C - 3Y)</li>
+                                    <li class="hover:opacity-60 py-3 px-2">Baby & Toddlers(1C - 10C)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-hover">
+                            <span class="">Clothing</span>
+                            <div
+                                class="dropdown-menu w-[250px] top-[85px] lg:top-[55px] absolute max-h-[0px] bg-white z-[1000] text-start  overflow-hidden duration-500">
+                                <ul class="py-4 px-2">
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Big Kids</li>
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Extended Sizing</li>
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Big Kids (XS - XL)</li>
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Little Kids(4 - 7)</li>
+                                    <li class="hover:opacity-60 py-3 px-2">Baby & Toddler(0M - 4T)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-hover">
+                            <span class="">New Arrivals</span>
+                            <div
+                                class="dropdown-menu w-[250px] top-[85px] lg:top-[55px] absolute max-h-[0px] bg-white z-[1000] text-start  overflow-hidden duration-500">
+                                <ul class="py-4 px-4">
+                                    <li class="hover:opacity-60 py-3 px-2 border-b">Shop Girls</li>
+                                    <li class="hover:opacity-60 py-3 px-2">Big Boys</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="">Gear & Accessories</span>
+                    </li>
+                    <li>
+                        <span class="">Mini Me</span>
+                    </li>
+                    <li>
+                        <span class="">Sale</span>
+                    </li>
+                </ul>
+                <div class="invisible max-xl:hidden">Hidden</div>
+            </menu>
+        </div>
+    </div>
+
+    <!-- cover image -->
+    <div class="max-w-[1824px] mx-auto">
+        <img class="w-full h-full object-cover hidden md:block px-12" src="../assets/images/Kids/cover.png"
+            alt="cover img">
+        <img class="w-full h-full object-cover md:hidden block" src="../assets/images/Kids/resCover.png"
+            alt="cover for mobile ">
+    </div>
+    <!-- caption -->
+    <div class="flex justify-center mt-6">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[40px] font-bold">Nike Aqua Swoosh</h1>
+            <p class="mt-6">Made for all your water-based adventures</p>
+            <div class="mt-6 ">
+                <a class="px-4 py-[6px] bg-black rounded-full text-white hover:opacity-60" href="">Shop</a>
+            </div>
+        </div>
+    </div>
+    <!--start card container -->
+    <div class="max-w-[1824px] mx-auto px-12">
+        <h3 class="text-2xl">Size for All</h3>
+        <div class="md:flex gap-5">
+            <div>
+                <div class="relative py-3 ">
+                    <img src="../assets/images/Kids/card/bigKids.png" alt="">
+                    <div class=" md:absolute bottom-[70px] left-[45px]">
+                        <h3 class="text-2xl">Big Kids</h3>
+                        <p class="py-4">Explore apparel (XS-XL) <br class="hidden md:block"> and shoes(3.5-7Y)</p>
+                        <button class="px-4 py-1 bg-black rounded-full text-white mt-2 hover:opacity-60">Shop</button>
+                    </div>
+                </div>
+                <div class="relative py-3 ">
+                    <img src="../assets/images/Kids/card/littleKids.png" alt="">
+                    <div class="md:absolute bottom-[70px] left-[45px]">
+                        <h3 class="text-2xl">Babies and Toddlers</h3>
+                        <p class="py-4">Explore apparel (0M-4T) <br> and shoes(0C-10C)</p>
+                        <button class="px-4 py-1 bg-black rounded-full text-white mt-2 hover:opacity-60">Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative py-3 ">
+                    <img src="../assets/images/Kids/card/toddler.png" alt="">
+                    <div class="md:absolute bottom-[70px] left-[45px]">
+                        <h3 class="text-2xl">Little Kids</h3>
+                        <p class="py-4">Explore apparel (4-7) <br> and shoes(10.5C-3Y)</p>
+                        <button class="px-4 py-1 bg-black rounded-full text-white mt-2 hover:opacity-60">Shop</button>
+                    </div>
+                </div>
+                <div class="relative py-3  ">
+                    <img src="../assets/images/Kids/card/essentials.png" alt="">
+                    <div class="md:absolute bottom-[70px] left-[45px]">
+                        <h3 class="text-2xl">Teen Essentials</h3>
+                        <p class="py-4">Explore apparel (XS-XL) <br> and shoes(3.5-7Y)</p>
+                        <button class="px-4 py-1 bg-black rounded-full text-white mt-2 hover:opacity-60">Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card container -->
+    <!-- start shoes slide -->
+    <div class="max-w-[1824px] mx-auto px-12 mt-[84px]">
+        <!-- top slideshow container -->
+        <div class="flex justify-between items-center mb-3">
+            <h3 class="text-[24px]">Popular Right Now</h3>
+            <!--slide btn container -->
+            <div>
+                <!-- previous button -->
+                <button onclick="slideShoes(0, -1)"
+                    class="relative w-12 h-12 border bg-[#E5E5E5] rounded-full hover:bg-[#cacacb]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="absolute top-[10px] left-[10px] w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <!-- next button -->
+                <button onclick="slideShoes(0, 1)"
+                    class="relative w-12 h-12 border bg-[#E5E5E5] rounded-full hover:bg-[#cacacb]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="absolute top-[10px] left-[10px] w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- shoes container -->
+        <ul class="slideShow flex overflow-x-auto gap-3">
+            <li class="slide-item">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/retro4.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Air Jordan 4 Retro</h4>
+                    <p class="text-[#B0B0B1]">Big Kids' Shoes</p>
+                    <p class="text-medium">$160</p>
+                </div>
+            </li>
+            <li class="slide-item ">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/retro.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Air Jordan 4 Retro</h4>
+                    <p class="text-[#B0B0B1]">Big Kids' Shoes</p>
+                    <p class="text-medium">$160</p>
+                </div>
+            </li>
+            <li class="slide-item ">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/baby-retro.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Jordan 4 Retro</h4>
+                    <p class="text-[#B0B0B1]">Little Kids' Shoes</p>
+                    <p class="text-medium">$100</p>
+                </div>
+            </li>
+            <li class="slide-item ">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/max-dn.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Nike Air Max Dn</h4>
+                    <p class="text-[#B0B0B1]">Baby/Toddler Shoes</p>
+                    <p class="text-medium">$85</p>
+                </div>
+            </li>
+            <li class="slide-item ">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/dunk-low.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Nike Dunk Low</h4>
+                    <p class="text-[#B0B0B1]">Baby/Toddler Shoes</p>
+                    <p class="text-medium">$55</p>
+                </div>
+            </li>
+            <li class="slide-item ">
+                <figure class=" ">
+                    <img class="image-slide" src="../assets/images/Kids/shoes/dunk-low2.png" alt="jordan1">
+                </figure>
+                <!-- content -->
+                <div>
+                    <h4 class="font-semibold">Nike Dunk Low</h4>
+                    <p class="text-[#B0B0B1]">Big Kids' Shoes</p>
+                    <p class="text-medium">$160</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- start trending section -->
+    <section class="max-w-[1824px] mx-auto px-12 mt-[84px]">
+        <div class="text-[24px] mb-3">
+            <h3>Trending</h3>
+        </div>
+        <abs-card-container data-source="kids-page-cards" display-style="md:flex"></abs-card-container>
+    </section>
+    <!-- end shoes slide -->
+    <!-- Explore -->
+    <section class="max-w-[1824px] mx-auto px-12 mt-[84px]">
+        <div class="text-[24px] mb-3">
+            <h3>More to Explore</h3>
+        </div>
+        <div class="flex gap-3 overflow-x-auto">
+            <figure class="flex-none max-w-full">
+                <img class="w-[350px] md:w-[560px]" src="../assets/images/Kids/explore/under70.png" alt="">
+                <figcaption>
+                    <h3 class="mb-8 pt-4 text-[20px]">Shoes $70 & Under</h3>
+                    <button class="border-b-2 border-black pb-[1px] text-[14px]">
+                        <span>Shop</span>
+                    </button>
+                </figcaption>
+            </figure>
+            <figure class="flex-none max-w-full">
+                <img class="w-[350px] md:w-[560px]" src="../assets/images/Kids/explore/shorts.png" alt="">
+                <figcaption>
+                    <h3 class="mb-8 pt-4 text-[20px]">Shoes $70 & Under</h3>
+                    <button class="border-b-2 border-black pb-[1px] text-[14px]">
+                        <span>Shop</span>
+                    </button>
+                </figcaption>
+            </figure>
+            <figure class="flex-none max-w-full">
+                <img class="w-[350px] md:w-[560px]" src="../assets/images/Kids/explore/easy on.png" alt="">
+                <figcaption>
+                    <h3 class="mb-8 pt-4 text-[20px]">Shoes $70 & Under</h3>
+                    <button class="border-b-2 border-black pb-[1px] text-[14px]">
+                        <span>Shop</span>
+                    </button>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- start shoes slide -->
+    <div class="max-w-[1824px] mx-auto relative">
+        <div class="max-w-[1824px] mx-auto mb-6 px-12 mt-[84px]">
+            <div class="">
+                <h3 class="uppercase text-[24px]">Classics by Spotlight</h3>
+            </div>
+        </div>
+        <div class="">
+            <!-- next icon  -->
+            <button onclick="slideShoes(1, 1)"
+                class=" bg-white w-10 h-10 absolute rounded-[50%] right-[84px] top-[45%] z-10 hover:opacity-60">
+                <svg class="relative left-[10px]" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"
+                    width="20px" height="20px" fill="none">
+                    <path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033"></path>
+                </svg>
+            </button>
+            <!--previous icon  -->
+            <button onclick="slideShoes(1, -1)"
+                class="bg-white w-10 h-10 absolute rounded-full left-[84px] top-[45%] z-10 hover:opacity-60">
+                <svg class="relative left-[10px]" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"
+                    width="20px" height="20px" fill="none">
+                    <path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967"></path>
+                </svg>
+            </button>
+            <!-- carousel component -->
+            <carousel-image data-source="carousel-kids"></carousel-image>
+            <!-- end shoes slide -->
+        </div>
+    </div>
+    <!-- end shoes slide -->
+    <!-- start merchMenuWrapper -->
+    <div class="mt-[84px] max-w-[920px] mx-auto mb-[84px]">
+        <merch-menu-wrapper data-source="merch-menu"></merch-menu-wrapper>
+    </div>
+    <!-- end merchMenuWrapper -->
+    <!-- start footer -->
+    <footer-nike data-source="footer-menu"></footer-nike>
+    <!--end footer  -->
+    <!-- js for component -->
+    <script src="../assets/js/components/component.js"></script>
+    <script src="../assets/js/components/carosel-component.js" type="module"></script>
+    <script src="../assets/js/components/absolute-cap-card.js" type="module"></script>
+    <script src="../assets/js/components/merchMenu.js" type="module"></script>
+    <script src="../assets/js/components/footer.js" type="module"></script>
+    <!-- js for function -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/kid.js"></script>
+</body>
+
+</html>
