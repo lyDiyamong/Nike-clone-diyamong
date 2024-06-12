@@ -73,13 +73,13 @@ class MainNavbar extends HTMLElement {
       <div class="flex max-w-[1800px] mx-auto px-4 justify-between items-center">
         <!-- nike-logo-->
         <div class="hover:opacity-60">
-          <a href="../index.html"><svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="110px" height="74px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg></a>
+          <a href="/Nike-clone-diyamong/index.html"><svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="110px" height="74px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg></a>
         </div>        
         <div class="flex justify-between ">
           <ul class="md:flex gap-4 font-medium hidden">
             <!-- new Featured -->
             <li  class="px-3 pt-3 pb-[18px]" onmouseenter="hoverDrop(1)" onmouseleave="hoverHide(-1)">
-                <a href="../public/new-feature.html">New & Featured</a>
+                <a href="/Nike-clone-diyamong/public/new-feature.html">New & Featured</a>
               <div id="newFeature" class=" absolute left-0 w-screen px-10  bg-white max-h-[0px] duration-300 overflow-y-hidden" >
                <div class="max-w-[1344px] mx-auto pb-[15px] flex gap-[60px] justify-center pt-8">
                   <div class="pt-4">
@@ -93,7 +93,7 @@ class MainNavbar extends HTMLElement {
                      <h4 class="mb-[14px]"><a href="">New & Featured</a></h4>
                      <ul class="text-[14px]">
                         <li class="text-[#707072] hover:text-black"><a href="">New arrivals</a></li>
-                        <li class="text-[#707072] hover:text-black"><a href="../public/best-seller.html">Best Sellers</a></li>
+                        <li class="text-[#707072] hover:text-black"><a href="/Nike-clone-diyamong/public/best-seller.html">Best Sellers</a></li>
                         <li class="text-[#707072] hover:text-black"><a href="">New & Upcoming Drops</a></li>
                         <li class="text-[#707072] hover:text-black"><a href="">Add to Bag to See Price</a></li>
                      </ul>                    
@@ -328,7 +328,7 @@ class MainNavbar extends HTMLElement {
           </li>
           <!-- Kids -->
           <li class="px-3 pt-3 pb-[18px] lg:block hidden" onmouseenter="hoverDrop(4)" onmouseleave="hoverHide(-4)">
-              <a href="../public/kids.html">Kids</a>
+              <a href="/Nike-clone-diyamong/public/kids.html">Kids</a>
               <div id="kids" class=" absolute left-0 w-screen px-10  bg-white max-h-[0px] duration-300 overflow-y-hidden" >
                 <div class="max-w-[1344px] mx-auto pb-[15px] flex gap-[60px] justify-center pt-8">
                     <div class="pt-4">
