@@ -4,7 +4,7 @@ This project aims to clone the Nike website to practice and demonstrate front-en
 
 In this project I've cloned 4 pages with 1 sub-pages.
 
-# Website URL: 
+## Website URL: 
 [Nike Clone](https://lydiyamong.github.io/Nike-clone-diyamong/)
 
 
